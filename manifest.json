@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Dynamic URL Key Mapper",
+  "name": "KeySwitch",
   "version": "1.3",
-  "description": "Maps letters in URLs between languages based on keyboard layouts and user locale.",
+  "description": "Easily switch and map keys between different languages in your URLs.",
   "permissions": [
     "tabs",
     "activeTab",
@@ -13,7 +13,7 @@
     "scripts": ["background.js"]
   },
   "browser_action": {
-    "default_title": "Map URL Keys",
+    "default_title": "KeySwitch",
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
@@ -35,7 +35,7 @@
   },
   "applications": {
     "gecko": {
-      "id": "dynamic-url-key-mapper@example.com"
+      "id": "KeySwitch@example.com"
     }
   }
 }
