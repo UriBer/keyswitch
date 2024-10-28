@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Dynamic URL Key Mapper",
+  "version": "1.3",
+  "description": "Maps letters in URLs between languages based on keyboard layouts and user locale.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "<all_urls>",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Map URL Keys",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+  "commands": {
+    "map-keys": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M"
+      },
+      "description": "Map URL keys to selected language"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "dynamic-url-key-mapper@example.com"
+    }
+  }
+}
